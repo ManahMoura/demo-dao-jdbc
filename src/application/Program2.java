@@ -23,6 +23,10 @@ public class Program2 {
 		for (Department d : list) {
 			System.out.println(d);
 		}
+
+		System.out.println("\n=== TEST 3: insert =======");
+		Department newDepartment = new Department(5, "Music");
+		departmentDao.insert(newDepartment);
 		
 		sc.close();
 
